@@ -34,11 +34,20 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            walkSpeed = 0f;
+            return;
+        }
+
+        walkSpeed = 4f;
         inputHorizontal = Input.GetAxisRaw("Horizontal");
         inputVertical = Input.GetAxisRaw("Vertical");
     }
     private void FixedUpdate()
     {
+        
+
         if (inputHorizontal != 0 || inputVertical != 0)
         {
             if (inputHorizontal != 0 && inputVertical != 0)
