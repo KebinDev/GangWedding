@@ -95,10 +95,8 @@ public class DialogueManager : MonoBehaviour
         ContinueStory();
     }
 
-    private IEnumerator ExitDialogueMode()
+    private void ExitDialogueMode()
     {
-        yield return new WaitForSeconds(0.2f);
-
         dialogueVariables.StopListening(currentStory);
         
         dialogueIsPlaying = false;
