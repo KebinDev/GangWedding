@@ -145,7 +145,7 @@ public class DialogueManager : MonoBehaviour
                     break;
                 
                 default:
-                    Debug.LogWarning("Tag cam in but is not currently being handled: " + tag);
+                    Debug.LogWarning("Tag came in but is not currently being handled: " + tag);
                     break;
             }
         }
