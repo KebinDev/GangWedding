@@ -6,6 +6,8 @@ INCLUDE globals.ink
 
 // INTRO    
 === Start ===
+{
+- bearTalkedTo_1 == false:
 You approach the wedding's personally chosen ringbearer. A teenage girl no older than 15 wearing a gown alongside a bear hat with lively ears.
 
 She ignorantly picks her nose, acting like every other kid that you've had be a ringbearer in the entirety of your career.
@@ -14,6 +16,19 @@ She ignorantly picks her nose, acting like every other kid that you've had be a 
 
 Though, unlike every other person here, you feel like you can approach her without being in constant fear of your life.
 ->firstImpressions
+
+- bearTalkedTo_2 == false || bearTalkedTo_1 == true:
+
+"Snarky dialogue here."
+
+-> secondConversation
+}
+
+=== secondConversation ===
+"Snarky dialogue here."
+
+~ bearTalkedTo_2 = true
+->DONE
 
 // CHOOSE YOUR PATH
 === firstImpressions ===
@@ -125,6 +140,7 @@ The drunken uncle turns to you, letting out once again, a large belch.
 
 "Did I do something?"
 
+~ bearTalkedTo_1 = true
 ->END
 
 === druncleconvo1_3 ===
@@ -138,8 +154,8 @@ The both of you scatter. Oddly enough through this gassy encounter, the teenager
 
 Speculation at that point.
 
+~ bearTalkedTo_1 = true
 ~ bearRespect = true
-
 ->END
 
 === disgustedBear ===
@@ -181,6 +197,7 @@ The girl leaps onto the uncle's back, wrapping his arm around his neck like a py
 
 You watch in a frozen state. They toss and turn in an opposite direction far from you. Seems that's the end of that conversation. Probably shouldn't try to get on her badside.
 
+~ bearTalkedTo_1 = true
 ->END
 
 === toughGuy ===
@@ -220,6 +237,7 @@ She turns around, giving you the middle finger before walking away. In that mome
 
 ~ bearRespect = true
 
+~ bearTalkedTo_1 = true
 ->END
 
 === threatenedEnding ===
@@ -231,6 +249,7 @@ Her voice booms out to you.
 
 Her words are full of disgust towards you. She is not playing around. Anything you do to jeopardize this wedding will be not be taken lightly with her.
 
+~ bearTalkedTo_1 = true
 ->END
 
 === threatenedEnding2 ===
@@ -239,4 +258,5 @@ As you turn around and dash out of the conversation, the Ringbearer laughs and c
 "YOU DO ANYTHING TO RUIN THIS WEDDING. I'LL BEAT YOU TO A PULP, YOU CREEPY PASTOR!"
 
 Better not do anything else to anger her.
+~ bearTalkedTo_1 = true
 ->END

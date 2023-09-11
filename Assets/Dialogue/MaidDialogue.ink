@@ -1,7 +1,35 @@
 INCLUDE globals.ink
 
-“Ah! Preach, there you are. I thought you wouldn’t show! *She slaps you on the back*. Now that would be a problem, right, a wedding without a preacher ?!
+// Start Label
+->Start
+
+=== Start ===
+
+{
+- maidTalkedTo_1 == false:
+
+“Ah! Preach, there you are. I thought you wouldn’t show! *She slaps you on the back*. Now that would be a problem, right, a wedding without a preacher?!“
+
 ->maidOfHonor
+
+- maidTalkedTo_2 == false || maidTalkedTo_1 == true:
+
+->maidConvo2
+}
+
+===maidConvo2===
+
+{
+- maidRespect == true: 
+Thanks again for your help preach, but I've got shit to do. I'll definitely talk to you later though!
+
+- maidRespect == false:
+Look old man I don't have time for this shit, just do your job, and don't talk to me again, ok ?
+
+~ maidTalkedTo_1 = true
+}
+
+->END
 
 ===maidOfHonor===
 + I… I would never miss the occasion to celebrate such a wonderful union of two people so clearly meant for each other! 
@@ -27,7 +55,9 @@ She sighs, and seems to focus back on the present.
     + "I'm sorry, burn down ?"
     ->bitterLaugh
     
-    + "(Ignore the 'burning down' comment)No it's quite alright, I will see you at the altar!" 
+    + "(Ignore the 'burning down' comment)No it's quite alright, I will see you at the altar!"
+    
+~ maidTalkedTo_1 = true
     ->END
 
 ===bitterLaugh===
@@ -38,6 +68,8 @@ She laughs bitterly.
     ->adviceConfirm
     
     + "Oh I'm sure you are. No grudges held, I assure you! Well, I'll leave you to your work, then!"
+    
+~ maidTalkedTo_1 = true
    ->END 
 
 
@@ -69,6 +101,7 @@ There is a glint of sadness in her eyes.
     ->adviceConfirm
     
     +"Well I'm sure you'll manage! Good luck."
+    ~ maidTalkedTo_1 = true
     ->END
     
     
@@ -207,6 +240,7 @@ After a small silence, he puts a big, greasy hand on your shoulder.
 "Wow, you must have said something, to piss her off." He leaves.
 You sigh. Looks like that's the end of the conversation.
 
+~ maidTalkedTo_1 = true
 ~ maidRespect = false
 ->END
 
@@ -220,8 +254,8 @@ After a small silence, the big guy puts a big, greasy hand on your shoulder.
 He laughs.
 You leave.
 
+~ maidTalkedTo_1 = true
 ~ maidRespect = false
-
 ->END
 
 
@@ -230,7 +264,7 @@ You leave.
 This time, there's no mistaking it: she respects you, she's listened to you, and will take what you've said to heart. She takes a big breath in, and out. "Thanks, preach. You're okay. I've got to take care of a bunch of other morons but you're not one of them. Take care.
 "You're most welcome, my child", you say with a smile. There's hope for her yet!
 
-
+~ maidTalkedTo_1 = true
 ~ maidRespect = true
 -> END
 
@@ -240,6 +274,7 @@ Her stare immediately goes cold. She crosses her arms and gets away from you.
 You can well see that no amount of talking will get you back in her good favors. You get away, before you pay the price for poking the bear.
 
 
+~ maidTalkedTo_1 = true
 ~ maidRespect = false
 -> END
 
@@ -251,12 +286,15 @@ She throws you away, and storms off.
 
 You should feel ashamed of yourself, but right now you're happy to be alive.
 
+~ maidTalkedTo_1 = true
 ~ maidRespect = false
 ->END
 
 ===talkEnd3===
 She calms down, looking extremely dejected.
 "Right. The bride. Well, if you'll excuse me I need to go make sure she doesn't trip in her dress. See you around, preach."
+
+~ maidTalkedTo_1 = true
 ~ maidRespect = false
 ->END
 
@@ -266,6 +304,6 @@ She calms down, looking extremely dejected.
 She sneers. 
 "Right. Sure you do. Well, if you'll excuse me I've got to make sure no one spits in the food we've got."
 
+~ maidTalkedTo_1 = true
 ~ maidRespect = false
-
 ->END

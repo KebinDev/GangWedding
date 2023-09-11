@@ -609,7 +609,7 @@ PrefabInstance:
     - target: {fileID: 7809165443949951866, guid: 33badc65f5936da4bac83ac00453195f, type: 3}
       propertyPath: inkJSON
       value: 
-      objectReference: {fileID: 4900000, guid: 9712edb180ebfac4aa8ce917291a6750, type: 3}
+      objectReference: {fileID: 4900000, guid: 753fa0469330a4c47a16919598ffa46e, type: 3}
     - target: {fileID: 7809165444559781388, guid: 33badc65f5936da4bac83ac00453195f, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -1049,7 +1049,7 @@ PrefabInstance:
     - target: {fileID: 7809165443949951866, guid: 33badc65f5936da4bac83ac00453195f, type: 3}
       propertyPath: inkJSON
       value: 
-      objectReference: {fileID: 4900000, guid: 1047c1af68545324488bde9d5d45615a, type: 3}
+      objectReference: {fileID: 4900000, guid: 5219bb606c71809488132a1abd76cd77, type: 3}
     - target: {fileID: 7809165444559781388, guid: 33badc65f5936da4bac83ac00453195f, type: 3}
       propertyPath: m_Color.b
       value: 0.39999998

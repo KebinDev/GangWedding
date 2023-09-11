@@ -1,3 +1,5 @@
+INCLUDE globals.ink
+
 {motherTrust:
     I've got a mic hidden in my flower. Clever, huh? 
   - else:

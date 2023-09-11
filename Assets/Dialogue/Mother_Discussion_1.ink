@@ -14,14 +14,14 @@ You stop momentarily to observe the visual of an older, middle-aged woman who ga
 -> convoStart
 
 - motherTalkedTo_2 == false || motherTalkedTo_1 == true:
-"Harro"
+"Mother dialogue here."
 
 -> secondConvo
 }
 
 // Second Conversation
 === secondConvo ===
-harro   
+Mother dialogue here.   
 
 ~ motherTalkedTo_2 = true
 -> DONE
@@ -40,6 +40,7 @@ The woman turns her gaze towards you, in a state of brief shock.
 === niceGreeting ===
 "Well then. It seems you're in rather high spirits.. Nevermind me, I wouldn't want to stop you from enjoying yourself before the wedding starts."
 
+~ motherTalkedTo_1 = true
 ->END
 
 === concernedGreeting ===

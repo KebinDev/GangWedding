@@ -5,7 +5,8 @@ VAR bearTalkedTo_1 = false
 VAR bearTalkedTo_2 = false
 VAR motherTalkedTo_1 = false
 VAR motherTalkedTo_2 = false
-VAR maidTalkedTo = false
+VAR maidTalkedTo_1 = false
+VAR maidTalkedTo_2 = false
 
 // Ringbearer Variables
 VAR bearRespect = false
