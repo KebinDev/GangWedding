@@ -96,13 +96,13 @@ Her eyes dart around to make sure no one is wathcing, or looking, then she lower
 "It's stupid, pastor. I'm in love. I'm in love with someone here, and I don't know what to do about it."
 
 + "Oh, my child. Love is a beautiful thing, you shouldn't feel ashamed of that! I find communication and transparence are always best in this type of scenario."
-    ->advice2
+    ->Advice2
     
 + "My child. Love is a beautiful thing, but today we are at a celebration of love, though it is not yours. I think it would be wise to let the bride have her day. Surely you love will endure one more day, yes?
     ->talkEnd1
 
 
-=advice2
+=Advice2
 "Communication ?", she answers, "What, is that some fancy word to say I should tell them? That's dumb!"
 She crosser her arms, and turns away from you...
 ...But her eyes turn back to you.
@@ -110,21 +110,21 @@ She crosser her arms, and turns away from you...
 
 +"Well, I'd say honesty in always best. You could tell him what's in your heart.
 How you feel and how you've felt about him since you've known him."
-->advice3
+->Advice3
 
 +"Don't think too much. These things require genuineness. Simply tell him how you feel in the moment, when you look at them, right then and there"
-->advice3
+->Advice3
 
-=advice3
+=Advice3
 "Pastor I can't just do that! I'd look stupid, I'd lose all my cred with the boys!"
 
 + "I'm sure they fear you too much to ever dream of making fun of you. You don't have to stop being yourself to confess. In fact, the more you staty faithful to yourself, the more attractive you'll appear!"
-->advice4
+->Advice4
 
 + "Think how happy you'd be if they said yes! It's a vulnerable moment yes, but I think you'd feel more free, once relieved of that weight"
-->advice4
+->Advice4
 
-=advice4
+=Advice4
 In that moment, she almost doesn't look like the terrifying murder-machine that she is. She's almost childlike in her answer.
 "But... But what if they say no?"
 

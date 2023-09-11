@@ -1,20 +1,30 @@
-You approach the wedding's personally chosen ringbearer. A teenage girl no older than 15 wearing a standard gown with a bear plushie hat.
+// Call to globals.ink
+INCLUDE globals.ink
+
+// Start Label
+-> Start
+
+// INTRO    
+=== Start ===
+You approach the wedding's personally chosen ringbearer. A teenage girl no older than 15 wearing a gown alongside a bear hat with lively ears.
 
 She ignorantly picks her nose, acting like every other kid that you've had be a ringbearer in the entirety of your career.
 
-"Whaddya want?"
+"Whaddya want?" She says with immediate aggression.
 
 Though, unlike every other person here, you feel like you can approach her without being in constant fear of your life.
 ->firstImpressions
 
-===firstImpressions===
-+ "Hello dear child, are you happy to have the most crucial job of this very wedding? You may be the most important one here!"
+// CHOOSE YOUR PATH
+=== firstImpressions ===
+
++ "Dear child, did ya' know you're the most important person of this entire event?" 
 ->cruelBear
 
-+ "Ah, what a beautiful bouquet of flowers. The basket suits you, young lady."
++ "Awh, what a beautiful bouquet of flowers! The basket suits you, young lady."
 ->disgustedBear
 
-===cruelBear===
+=== cruelBear ===
 "Important? Pfft. I didn't ask to do this. I got voted by my family like some piece of meat.." 
 
 Her eyebrows lift in skepticism towards you, slightly wary of your presence.
@@ -32,7 +42,7 @@ Her tone is brash. This girl is serious about making your entire life a living n
 + "I'd never do such a dastard t-thing. I think we got off on the wrong foot, missy! I'm actually here to make sure the wedding goes off without a HITCH."
 ->teenageAngst
 
-===loserHumiliation===
+=== loserHumiliation ===
 A stifled laughter escapes her mouth briefly. Her face flushes brightly from holding it in. The Ringbearer can barely hold herself back.
 
 Then, she burst out laughing.
@@ -50,7 +60,7 @@ You're not too sure if you should keep talking to the Ringbearer. She seems like
 ->threatenedEnding
 
 
-===teenageAngst===
+=== teenageAngst ===
 "..Dastard? Missy?"
 
 The teenager stares at you, not even a single ounce of emotion in her face. She does not take you seriously whatsoever.
@@ -64,7 +74,7 @@ Everybody stares at her, and she keeps laughing. She shows no sign of stopping a
 + Awkwardly walk away and leave her.
 ->threatenedEnding
 
-===mellowTalk===
+=== mellowTalk ===
 You hear her mutter, the word 'shit' under her breath. Obviously, you hit that right spot of self-realization for her.
 
 "Pssh, nuh uh. This is a special day, and I won't do anything to ruin that. And neither will you. Got it?"
@@ -79,7 +89,7 @@ The small ears on her bear hat lift up in tandem with her brief step towards you
 + "I-I.. cannot make any promises."
 ->druncleconvo1_1
 
-===druncleconvo1_1===
+=== druncleconvo1_1 ===
 "Eugh."
 
 The girl pats you menacingly on the back. Her hands feel rough, as if they've been through a lot.
@@ -100,7 +110,7 @@ She pushes him off of him and grabs the bear hat off the floor.
 * "Hey, there's more accomodations for food towards the back there!" *Point behind the uncle*
 ->druncleconvo1_3
 
-===druncleconvo1_2
+=== druncleconvo1_2 ===
 "C-cmon now! No need to hit me with the harsh words! I changed your diaper y'know?"
 
 A pause in his words caused the both of you to stop and stare.
@@ -117,18 +127,22 @@ The drunken uncle turns to you, letting out once again, a large belch.
 
 ->END
 
-===druncleconvo1_3
+=== druncleconvo1_3 ===
 "YOU WAS HIDING FOOD? WELL HOT DIGGITY DOG! WHY AIN'T YOU SAY NUTHIN'?"
 
 The uncle turns in a robotic fashion, nearly falling onto his own ass before recovering. He lifts one leg, letting out some gas towards your general direction.
 
 "EUGH, GROSS! RUN!"
 
-The both of you scatter.
+The both of you scatter. Oddly enough through this gassy encounter, the teenager gives you a brief flash of her pearly whites. Have you somehow left things off on a good note?
+
+Speculation at that point.
+
+~ bearRespect = true
 
 ->END
 
-===disgustedBear===
+=== disgustedBear ===
 "Uhm.. ew. Aren't you priests creeps or something?" 
 
 The teenager responds with angst. Her eyebrows furrow with a demeaning side-eye glance. Her left hand clenches tightly into a fist; better make your next words count.
@@ -141,7 +155,7 @@ The teenager responds with angst. Her eyebrows furrow with a demeaning side-eye 
 + "I will not be spoken to in this manner."
 -> toughGuy
 
-===stigmaTalk===
+=== stigmaTalk ===
 "Dunno bout' that. You seem like the weird type. And with weird comes trouble."
 
 The teenager digs into her pockets and pulls out a pair of brass knuckle. They fit firmly around her knuckles.
@@ -154,14 +168,14 @@ Beads of sweat fall from your face, a conversation you hoped would be normal has
 + Run away as fast as you can.
 ->threatenedEnding2
 
-===druncleconvo2_1
+=== druncleconvo2_1 ===
 "OY! ARE THOSE MY BRASS KNUCKLES?! I'VE BEEN LOOKING ROUND' FOR THEM SINCE FOREVER!" 
 
 A shitfaced man yells out to the both of you. He stumbles towards you, farting with each step. He swipes the brass knuckles off the girl.
 
 Taking a peek at them, he grins and pockets them. The Ringbearer is in absolute shock with widened eyes and an agape jaw.
 
-"GIVE THOSE BACK OLD MAN! YOU DAFT FUCKER!"
+"GIVE THOSE BACK OLD MAN! YOU FUCKER!"
 
 The girl leaps onto the uncle's back, wrapping his arm around his neck like a python. Unfortunately, due to his fat and double-chin, it has no effect. He flashes you a wink as he's pulled away.
 
@@ -169,7 +183,7 @@ You watch in a frozen state. They toss and turn in an opposite direction far fro
 
 ->END
 
-===toughGuy===
+=== toughGuy ===
 She scoffs in your face, putting a hand on her hip. One ear on her infamous bear hat lifts up joining alongside the facial expression she holds.
 
 "Think you're tough huh? You really wanna do this?"
@@ -182,7 +196,7 @@ The brass knuckles press against your chest, causing an aching pain to spread ac
 + Back off and run away.
 -> threatenedEnding2
 
-===toughGuy2===
+=== toughGuy2 ===
 "You're persistent, aren't yah?"
 
 As the brass knuckles push in deeper, lining up against your ribcage. The pain is intense, though growing increasingly excruciating.
@@ -195,7 +209,7 @@ You feel the air being sucked out of your body, causing your heart rate to spike
 + Push her back then run away in fear.
 ->threatenedEnding2
 
-===toughGuy3===
+=== toughGuy3 ===
 The knuckles reach the climax point, you feel as if your ribcage is about to shatter from the sheer foce alone.
 
 Then, she pulls back right at the last moment.
@@ -204,9 +218,11 @@ Then, she pulls back right at the last moment.
 
 She turns around, giving you the middle finger before walking away. In that moment, it felt like you gained her respect. Still, was it even worth it to gain the respect of a 15-year-old?
 
+~ bearRespect = true
+
 ->END
 
-===threatenedEnding===
+=== threatenedEnding ===
 Her voice booms out to you.
 
 "Oy."
@@ -217,7 +233,7 @@ Her words are full of disgust towards you. She is not playing around. Anything y
 
 ->END
 
-===threatenedEnding2===
+=== threatenedEnding2 ===
 As you turn around and dash out of the conversation, the Ringbearer laughs and calls out to you.
 
 "YOU DO ANYTHING TO RUIN THIS WEDDING. I'LL BEAT YOU TO A PULP, YOU CREEPY PASTOR!"

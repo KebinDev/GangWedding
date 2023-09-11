@@ -668,7 +668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7809165444734994653, guid: 33badc65f5936da4bac83ac00453195f, type: 3}
       propertyPath: m_Name
-      value: Colour NPC
+      value: Maid NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33badc65f5936da4bac83ac00453195f, type: 3}
@@ -1049,7 +1049,7 @@ PrefabInstance:
     - target: {fileID: 7809165443949951866, guid: 33badc65f5936da4bac83ac00453195f, type: 3}
       propertyPath: inkJSON
       value: 
-      objectReference: {fileID: 4900000, guid: 5219bb606c71809488132a1abd76cd77, type: 3}
+      objectReference: {fileID: 4900000, guid: 1047c1af68545324488bde9d5d45615a, type: 3}
     - target: {fileID: 7809165444559781388, guid: 33badc65f5936da4bac83ac00453195f, type: 3}
       propertyPath: m_Color.b
       value: 0.39999998
@@ -1108,7 +1108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7809165444734994653, guid: 33badc65f5936da4bac83ac00453195f, type: 3}
       propertyPath: m_Name
-      value: Ringbearer
+      value: Ringbearer NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33badc65f5936da4bac83ac00453195f, type: 3}
@@ -2180,7 +2180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7809165444734994653, guid: 33badc65f5936da4bac83ac00453195f, type: 3}
       propertyPath: m_Name
-      value: Test NPC (1)
+      value: Mother NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33badc65f5936da4bac83ac00453195f, type: 3}

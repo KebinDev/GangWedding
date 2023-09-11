@@ -1,13 +1,4 @@
-VAR motherTrust = true
-VAR motherEvidence = true
-VAR maidTrust = true
-VAR bearRespect = true
-
-VAR advice1 = true
-VAR advice2 = true
-VAR advice3 = true
-
-VAR brideLove = 0
+INCLUDE globals.ink
 
 The guests shuffle in the church awkwardly, all eyeing each other with mistrust. Both gangs sit very deliberately on separate sides of the isle.
 ->weddingScene
@@ -25,7 +16,7 @@ You get up on the stage, and look at the assembly. All the way to the back of th
 
 The maid of honor follows and comes to stand behind you as well.
 
-{maidTrust:
+{maidRespect:
     She quickly steps towards you and grabs your arm. "Thanks, pastor." And nods knowingly. You're not sure what it is you're supposed to be knowing.
   - else:
    She scowls at you, and redirects her eyes at the crowd.
@@ -89,7 +80,7 @@ You wait for the music to quiet down, clear your throat, and start speaking. Or 
 
 "Marriage, before anything else, is a duty. Duty to yourself. Duty to your spouse. You will soon make your vows, but first, I must warn. Whoever wishes to oppose this union: speak now or forever hold your peace."
 
-{maidTrust:
+{maidRespect:
     Behind you, a voice is raised:
     "I will speak!".
     A collective gasp is heard.
