@@ -1,0 +1,1 @@
+"Bro see that guy over here in blue? I'm gonna sell him so many drugs. He's saying he's looking for some !

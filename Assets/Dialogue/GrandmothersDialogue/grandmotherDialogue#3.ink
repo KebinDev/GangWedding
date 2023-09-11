@@ -1,0 +1,1 @@
+"And I honor you and cherish you, and you will always have my respect... Go away! I'm rehearsing my lines"

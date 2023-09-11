@@ -1,0 +1,1 @@
+"What do you think of the current socieconomic context of occidental society in comparison to its asiatic counterpart?"

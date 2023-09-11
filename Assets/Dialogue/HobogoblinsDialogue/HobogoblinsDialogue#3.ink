@@ -1,0 +1,1 @@
+"...I was on a heist with these three dudes, this one guy apparently decided to fake his death and go live the good life while his friend rotted in prison. Ain't no pride in that typa guy"

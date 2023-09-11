@@ -1,0 +1,1 @@
+"I've literally murdered seven people this morning."
