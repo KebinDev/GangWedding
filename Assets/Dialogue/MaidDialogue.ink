@@ -1,3 +1,5 @@
+INCLUDE globals.ink
+
 “Ah! Preach, there you are. I thought you wouldn’t show! *She slaps you on the back*. Now that would be a problem, right, a wedding without a preacher ?!
 ->maidOfHonor
 
@@ -204,6 +206,8 @@ She storms off.
 After a small silence, he puts a big, greasy hand on your shoulder.
 "Wow, you must have said something, to piss her off." He leaves.
 You sigh. Looks like that's the end of the conversation.
+
+~ maidRespect = false
 ->END
 
 ===druncle2===
@@ -216,6 +220,8 @@ After a small silence, the big guy puts a big, greasy hand on your shoulder.
 He laughs.
 You leave.
 
+~ maidRespect = false
+
 ->END
 
 
@@ -223,12 +229,18 @@ You leave.
 ===adviceEnd===
 This time, there's no mistaking it: she respects you, she's listened to you, and will take what you've said to heart. She takes a big breath in, and out. "Thanks, preach. You're okay. I've got to take care of a bunch of other morons but you're not one of them. Take care.
 "You're most welcome, my child", you say with a smile. There's hope for her yet!
+
+
+~ maidRespect = true
 -> END
 
 ===talkEnd1===
 Her stare immediately goes cold. She crosses her arms and gets away from you.
 "You know what preach? Forget I said anything, and kindly fuck off".
 You can well see that no amount of talking will get you back in her good favors. You get away, before you pay the price for poking the bear.
+
+
+~ maidRespect = false
 -> END
 
 ===talkEnd2===
@@ -238,16 +250,22 @@ She leans in very close to you, and presses the knife a bit closer to your throa
 She throws you away, and storms off.
 
 You should feel ashamed of yourself, but right now you're happy to be alive.
+
+~ maidRespect = false
 ->END
 
 ===talkEnd3===
 She calms down, looking extremely dejected.
 "Right. The bride. Well, if you'll excuse me I need to go make sure she doesn't trip in her dress. See you around, preach."
+~ maidRespect = false
 ->END
+
 
 ===talkEnd4===
 
 She sneers. 
 "Right. Sure you do. Well, if you'll excuse me I've got to make sure no one spits in the food we've got."
+
+~ maidRespect = false
 
 ->END
