@@ -206,7 +206,7 @@ Then, she pulls back right at the last moment.
 
 She turns around, giving you the middle finger before walking away. In that moment, it felt like you gained her respect. Still, was it even worth it to gain the respect of a 15-year-old?
 
-~ bearRespect = 1
+~ bearRespect += 1
 
 ->DONE
 
