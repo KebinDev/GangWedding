@@ -8,7 +8,7 @@ INCLUDE globals.ink
 // First Conversation
 {
 - motherTalkedTo_1 == false:
-You stop momentarily to observe the visual of an older, middle-aged woman who gazes onward at the groom with a look of disdain on her glum face
+You stop momentarily to observe an older, middle-aged woman who gazes onward at the groom with a look of disdain on her glum face
 
 + "Excuse me, are you alright?"
 -> convoStart
@@ -17,6 +17,11 @@ You stop momentarily to observe the visual of an older, middle-aged woman who ga
 "Mother dialogue here."
 
 -> secondConvo
+
+- maidRespect == true || bearRespect == true:
+"You seem to keep questionable company. I will not talk to you."
+
+-> DONE
 }
 
 // Second Conversation
@@ -49,7 +54,7 @@ The woman turns her gaze towards you, in a state of brief shock.
 + "W-well, your son certainly seems happy. Do you believe this marriage is not what's best for him?"
 ->noTrust
 
-+ "As much as I am meant to remain netural, they are certainly making a mess of the chapel.."
++ "As much as I am meant to remain neutral, they are certainly making a mess of the chapel.."
 ->surpriseTwist
 
 === surpriseTwist ===
@@ -68,9 +73,9 @@ Maria perks up slightly, her gloomy expression being replaced by one of surprise
 === harmlessReply ===
 "Harmless? It's not just an act. These are ruthless gangs filled with ignorant people."
 
-"I could never live with myself if I lost my only child, father. They say it's all about "family" and yet it's almost every week someone dies for the sake of some petty crime. That won't be happening to my son. I don't know what I would do with myself."
+"I could never live with myself if I lost my only child, father. They say it's all about 'family' and yet it's almost every week someone dies for the sake of some petty crime. That won't be happening to my son. I don't know what I would do with myself."
 
-+ "Interesting.. I have some time before the ceremony starts.. How can I assist you, my child?"
++ "Interesting... I have some time before the ceremony starts... How can I assist you, my child?"
 ->theReveal
 
 === theReveal ===
@@ -104,6 +109,7 @@ Maria perks up slightly, her gloomy expression being replaced by one of surprise
 "Thank you, father. From the bottom of my heart."
 
 ~ motherTalkedTo_1 = true
+~ motherTrust = true
 ->END
 
 === noTrust ===

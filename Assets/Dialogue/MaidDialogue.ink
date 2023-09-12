@@ -143,18 +143,23 @@ She crosser her arms, and turns away from you...
 
 +"Well, I'd say honesty in always best. You could tell him what's in your heart.
 How you feel and how you've felt about him since you've known him."
+~ advice1 = true
+
 ->Advice3
 
 +"Don't think too much. These things require genuineness. Simply tell him how you feel in the moment, when you look at them, right then and there"
+~ advice1 = false
 ->Advice3
 
 =Advice3
 "Pastor I can't just do that! I'd look stupid, I'd lose all my cred with the boys!"
 
-+ "I'm sure they fear you too much to ever dream of making fun of you. You don't have to stop being yourself to confess. In fact, the more you staty faithful to yourself, the more attractive you'll appear!"
++ "I'm sure they fear you too much to ever dream of making fun of you. You don't have to stop being yourself to confess. In fact, the more you stay faithful to yourself, the more attractive you'll appear!"
+~ advice2 = false
 ->Advice4
 
 + "Think how happy you'd be if they said yes! It's a vulnerable moment yes, but I think you'd feel more free, once relieved of that weight"
+~ advice2 = true
 ->Advice4
 
 =Advice4
@@ -162,16 +167,14 @@ In that moment, she almost doesn't look like the terrifying murder-machine that 
 "But... But what if they say no?"
 
 + "That's a risk everyone in that kind of situation has to face. It might hurt, a lot, yes. But ask yourself: do you really have a choice?"
+~ advice3 = true
 ->adviceEnd
 
 + "That is not something you can control. All you can do is say what you have to say, and then the responsibility of the answer lies in his hands. You have done your part"
+~ advice3 = false
 ->adviceEnd
     
-    
 
-
-
-    
 ===intenseStare===
 Her expression changes to one far more itense
 "What do you mean a sign?"

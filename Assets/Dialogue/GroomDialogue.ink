@@ -1,0 +1,1 @@
+"Look at my bride-to-be! Isn't she beautiful ? Nothing could ruin this day! It's just too perfect!"

@@ -1,7 +1,7 @@
 INCLUDE globals.ink
 
 {motherTrust:
-    There are So. Many. Criminals here!
+    "There are so. Many. Criminals here!"
   - else:
-    Delicious champaign, how many times have you commited murder ?
+    "Delicious champaign, how many times have you commited arson ?"
 }
