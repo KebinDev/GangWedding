@@ -5,23 +5,27 @@ INCLUDE globals.ink
 
 === Start ===
 
-// First Conversation
+// Dismissive Start
 {
-- motherTalkedTo_1 == false:
+- maidRespect == true || bearRespect == true:
+"You seem to keep questionable company. I will not talk to you."
+
+-> DONE
+}
+
+// First Conersation
+{
+- motherTalkedTo_1 == false || maidRespect == false || bearRespect == false:
 You stop momentarily to observe an older, middle-aged woman who gazes onward at the groom with a look of disdain on her glum face
 
 + "Excuse me, are you alright?"
 -> convoStart
 
+// Second conversation
 - motherTalkedTo_2 == false || motherTalkedTo_1 == true:
 "Mother dialogue here."
 
 -> secondConvo
-
-- maidRespect == true || bearRespect == true:
-"You seem to keep questionable company. I will not talk to you."
-
--> DONE
 }
 
 // Second Conversation

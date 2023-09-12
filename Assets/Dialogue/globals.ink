@@ -12,7 +12,7 @@ VAR maidTalkedTo_2 = false
 VAR bearRespect = false
 
 // Groom Mother Variables
-VAR motherTrust = false
+VAR motherTrust = false  
 VAR motherEvidence = false
 
 // Maid Variables
